@@ -90,11 +90,7 @@ console.log(dog);
 
 // sayName(20, "Deepak");// error
 
-interface Person {
-  name: string,
-  age: number
-};
-
+import { Person } from './interfaces';
 const sayName = ({ name, age }: Person) => {
   console.log(name);
   console.log(age);
@@ -104,10 +100,8 @@ sayName({ age: 20, name: "Deepak" });// works!
 
 // Enums
 
-enum Type {
-  Quiz, Video, Blog
-}
 
+import { Type } from './interfaces';
 console.log(Type);
 console.log(Type.Video);
 
