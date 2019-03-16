@@ -51,12 +51,12 @@ const sayHello = (word = "Deepak", ...otherStuff: string[]): string => {
 sayHello("123");
 
 let newName = "Deepak";
-newName = 10; // <- not possible
+// newName = 10; // <- not possible
 
 console.log(newName);
 
 let newNameTwo = newName;
-newNameTwo = 10;
+// newNameTwo = 10;
 
 console.log(newNameTwo);
 
@@ -68,7 +68,7 @@ newNameThree = 20;
 console.log(newNameThree);
 
 let temp = newNameThree;
-temp = "Deepak";
+// temp = "Deepak";// error implicit type number
 console.log(temp)
 
 
@@ -110,7 +110,9 @@ const createContent = (contentType: Type) => {
 }
 
 enum Type2 {
-  Quiz = "quiz", Video = "video", Blog = "blog"
+  Quiz = "quiz",
+  Video = "video",
+  Blog = "blog"
 }
 
 console.log(Type2);
