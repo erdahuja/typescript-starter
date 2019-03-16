@@ -60,7 +60,7 @@ newNameTwo = 10;
 
 console.log(newNameTwo);
 
-let newNameThree : string | number = "Deepak";
+let newNameThree: string | number = "Deepak";
 newNameThree = 10; // now possible
 newNameThree = "seep";
 // newNameThree = true; error
@@ -73,11 +73,32 @@ console.log(temp)
 
 
 // null types
-let dog: string|number|boolean|undefined;
+let dog: string | number | boolean | undefined;
 dog = "Deepak";
 dog = 10;
 dog = false;
 dog = null;
 dog = undefined;
 console.log(dog);
+
+// interface
+
+// const sayName = (name: string, age: number) => {
+//   console.log(name);
+//   console.log(age);
+// }
+
+// sayName(20, "Deepak");// error
+
+interface Person{
+name: string,
+age: number
+};
+
+const sayName = ({name, age}: Person) => {
+  console.log(name);
+  console.log(age);
+}
+
+sayName({age: 20, name: "Deepak"});// works!
 
