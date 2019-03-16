@@ -90,17 +90,17 @@ console.log(dog);
 
 // sayName(20, "Deepak");// error
 
-interface Person{
-name: string,
-age: number
+interface Person {
+  name: string,
+  age: number
 };
 
-const sayName = ({name, age}: Person) => {
+const sayName = ({ name, age }: Person) => {
   console.log(name);
   console.log(age);
 }
 
-sayName({age: 20, name: "Deepak"});// works!
+sayName({ age: 20, name: "Deepak" });// works!
 
 // Enums
 
@@ -116,7 +116,7 @@ const createContent = (contentType: Type) => {
 }
 
 enum Type2 {
-  Quiz= "quiz", Video= "video", Blog= "blog"
+  Quiz = "quiz", Video = "video", Blog = "blog"
 }
 
 console.log(Type2);
@@ -127,3 +127,19 @@ const createContent2 = (contentType: Type2) => {
 }
 
 createContent2(Type2.Video);// => "video"
+
+class Team {
+  teamName: string;// public
+  // private teamName: string;// not accessible outside class
+  // readonly teamName: string;// Readonly properties must be initialized at their declaration or in the constructor
+  constructor(name) {
+    this.teamName = name;
+  }
+  score(): number {
+    console.log("Goaaaaaal");
+    return 1;
+  }
+}
+const team1 = new Team("Deepak's team");
+console.log(team1.teamName, team1.score());
+
