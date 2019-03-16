@@ -71,3 +71,13 @@ let temp = newNameThree;
 temp = "Deepak";
 console.log(temp)
 
+
+// null types
+let dog: string|number|boolean|undefined;
+dog = "Deepak";
+dog = 10;
+dog = false;
+dog = null;
+dog = undefined;
+console.log(dog);
+
