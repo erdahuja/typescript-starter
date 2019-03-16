@@ -51,7 +51,23 @@ const sayHello = (word = "Deepak", ...otherStuff: string[]): string => {
 sayHello("123");
 
 let newName = "Deepak";
-// newName = 10; <- not possible
+newName = 10; // <- not possible
 
 console.log(newName);
+
+let newNameTwo = newName;
+newNameTwo = 10;
+
+console.log(newNameTwo);
+
+let newNameThree : string | number = "Deepak";
+newNameThree = 10; // now possible
+newNameThree = "seep";
+// newNameThree = true; error
+newNameThree = 20;
+console.log(newNameThree);
+
+let temp = newNameThree;
+temp = "Deepak";
+console.log(temp)
 
