@@ -102,3 +102,28 @@ const sayName = ({name, age}: Person) => {
 
 sayName({age: 20, name: "Deepak"});// works!
 
+// Enums
+
+enum Type {
+  Quiz, Video, Blog
+}
+
+console.log(Type);
+console.log(Type.Video);
+
+const createContent = (contentType: Type) => {
+  console.log(contentType);
+}
+
+enum Type2 {
+  Quiz= "quiz", Video= "video", Blog= "blog"
+}
+
+console.log(Type2);
+console.log(Type2.Video);
+
+const createContent2 = (contentType: Type2) => {
+  console.log(contentType);
+}
+
+createContent2(Type2.Video);// => "video"
