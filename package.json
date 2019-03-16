@@ -8,7 +8,5 @@
   },
   "author": "@erdahuja",
   "license": "ISC",
-  "devDependencies": {
-    "parcel-plugin-typescript": "^1.0.0"
-  }
+  "devDependencies": {}
 }

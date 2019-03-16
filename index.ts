@@ -16,7 +16,42 @@ enum Job {
 const job: Job = Job.WebDev;
 
 let phone: any = 'Pixel';
-const tablet: never = 3;
-console.log(typeof phone);
+// const tablet: never = 3;
 phone = 123;
-console.log(typeof phone);
+
+// parameter type
+// const sayHello = (word: string) => {
+//   console.log(word)
+// }
+
+// return type
+// const sayHello = (word: string): string => {
+//   console.log(word);
+//   return word;
+// }
+
+// optional type
+// const sayHello = (word?: string): string => {
+//   console.log(word);
+//   return word;
+// }
+
+// default type
+// const sayHello = (word = "Default"): string => {
+//   console.log(word);
+//   return word;
+// }
+
+// rest parameters type
+const sayHello = (word = "Deepak", ...otherStuff: string[]): string => {
+  console.log(word, otherStuff);
+  return word;
+}
+
+sayHello("123");
+
+let newName = "Deepak";
+// newName = 10; <- not possible
+
+console.log(newName);
+
