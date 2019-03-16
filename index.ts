@@ -139,3 +139,16 @@ class Team {
 const team1 = new Team("Deepak's team");
 console.log(team1.teamName, team1.score());
 
+// Duck type
+class Dancer implements Person {
+  name: string;  age: number;
+
+
+}
+const fake = {
+  name: "Deepak",
+  age: 20,
+  expereicne: 2
+}
+let dancer: Person;
+dancer = fake;
